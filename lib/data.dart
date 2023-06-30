@@ -1,4 +1,33 @@
-List<String> countries = [
+import 'package:flutter/material.dart';
+
+List<Country> countries = [
+  Country(name: "Indonesia", code: "ID"),
+  Country(name: "Singapura", code: "SGP"),
+  Country(name: "Amerika Serikat", code: "USA")
+];
+
+List<DropdownData> dataval = [
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+  DropdownData(title: "Bitcoin", value: '1'),
+  DropdownData(title: "Ethereum", value: '2'),
+  DropdownData(title: "XRP", value: '3'),
+];
+
+List<String> countries2 = [
   'Afghanistan',
   'Åland Islands',
   'Albania',
@@ -252,4 +281,15 @@ class Country {
     required this.name,
     required this.code,
   });
+
+  static int count<T>(List<T> d) {
+    return 0;
+  }
+}
+
+class DropdownData {
+  String title;
+  String value;
+  Icon? icon;
+  DropdownData({required this.title, required this.value, this.icon});
 }
