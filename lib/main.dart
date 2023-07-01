@@ -1,5 +1,6 @@
 import 'package:dropdown_custom_hadi/data.dart';
 import 'package:dropdown_custom_hadi/dropdown.dart';
+import 'package:dropdown_custom_hadi/dropdown2.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -44,10 +45,14 @@ class _MyDropdownState extends State<MyDropdown> {
             data: dataval,
             hint: "Pilih",
             isDisable: false,
-            ontap: (data) {
-              print("hasil:${data.title}");
-            },
-          )
+            ontap: (data) => print("hasil:${data.title}"),
+          ),
+          const SizedBox(height: 50),
+          SearcahbleDropdown2(
+            data: const [],
+            hint: "overlay",
+            ontap: (data) {},
+          ),
         ],
       ),
     );
